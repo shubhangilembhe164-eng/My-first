@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>SetInterval function in JS</title>
+<script type="text/javascript">
+show=function(){
+intervalID=setInterval(display,1000);
+}
+function display(){
+alert("Good Morning Everyone");
+}
+function stopAlert(){
+clearInterval(intervalID);
+}
+</script>
+</head>
+<body>
+<input type="submit" name="s" value="show alert message" onclick="show()"/>
+<input type="submit" name="s" value="stop alert" onclick="stopAlert()"/>
+</body>
+</html>

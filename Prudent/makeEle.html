@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Add img on button click</title>
+<style>
+input{
+width:400px;
+height:40px;
+}
+div{
+width:38%;
+height:38vh;
+
+}
+</style>
+<script type="text/javascript">
+function generateForm(){
+let parent=document.getElementById("d");
+parent.style.backgroundColor="teal";
+parent.style.padding="40px";
+parent.style.position="relative";
+parent.style.left="20px";
+parent.style.top="100px";
+parent.style.borderRadius="20px";
+
+let nameTextBox=document.createElement("input");
+nameTextBox.setAttribute("type","text");
+nameTextBox.setAttribute("name","name");
+parent.append(nameTextBox);
+
+let br=document.createElement("input");
+br.setAttribute("type","text");
+br.setAttribute("name","name");
+parent.append(br);
+
+ let emailTextBox=document.createElement("input");
+emailTextBox.setAttribute("type","text");
+emailTextBox.setAttribute("name","name");
+parent.append(emailTextBox);
+
+
+}
+</script>
+</head>
+<body>
+<input type="button" name="b" value="Add Image" onclick="generateForm()"/><br><br>
+<div id="d"></div>
+</body>
+</html>

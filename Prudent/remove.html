@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Pop method use in array</title>
+<script type="text/javascript">
+show=function()
+{
+var a = [1, 2, 3, 4, 5];
+var remove = [2, 4];
+for (var i = a.length - 1; i >= 0; i--) 
+{
+ if (remove.includes(a[i])) 
+{
+        a.splice(i, 1);
+}
+}
+}
+</script>
+</head>
+<body>
+<button onclick="show()"><h1>Click here</h1></button>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/JavaScript">
+        function show() {
+            alert("Good morning");
+        
+            document.getElementById("bt").style.background="red";
+        }
+        function display() {
+            document.getElementById("bt").style.background="white";
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" name="b" value="show message" id="bt" class="btn" onmouseover=show()
+        onmouseout=display()></button>
+</body>
+
+</html>

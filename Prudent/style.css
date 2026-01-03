@@ -1,0 +1,40 @@
+.nav{
+list-style-type:none;
+padding:2px;
+font-size:20px;
+font-weight:bold;
+margin-left:300px;
+margin-top:20px;
+}
+.nav li{
+display:inline;
+margin-right:20px;
+}
+
+
+.logo{
+height: 50px;
+width: 50px;
+
+}
+.bar{
+height:30px;
+width:30px;
+}
+.youtube{
+height:30px;
+width:30px;
+} 
+.facebook{
+height:30px;
+width:30px;
+}
+.insta{
+height:30px;
+width:30px;
+}
+.img{
+height:1000px;
+width:1600px;
+}
+

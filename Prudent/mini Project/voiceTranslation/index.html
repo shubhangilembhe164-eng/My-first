@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mini Real-Time Voice Translator (Demo)</title>
+  <link  rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <h1>Mini Real-Time Voice Translator</h1>
+  
+  <div class="card">
+    <label>Input Language </label>
+    <select id="srcLang"></select>
+
+    <label>Output Language </label>
+    <select id="tgtLang"></select>
+
+    <div id="controls">
+      <button id="startBtn">Start Listening</button>
+      <button id="stopBtn" disabled>Stop</button>
+      <button id="playBtn" disabled>Play Last Translation</button>
+    </div>
+
+    <div id="status">Status: Idle</div>
+  </div>
+
+  <div class="card">
+    <label>Recognized Text:</label>
+    <pre id="recognized">—</pre>
+
+    <label>Translated Text :</label>
+    <pre id="translated">—</pre>
+  </div>
+
+  <div class="card">
+    <label>Advanced / Notes</label>
+    
+  </div>
+
+  
+
+<script src="voice.js"></script>
+</body>
+</html>

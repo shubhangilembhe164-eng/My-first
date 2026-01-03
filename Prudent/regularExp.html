@@ -1,0 +1,28 @@
+<html>
+<head>
+<script type="text/javascript">
+function search(){
+let s=document.getElementById("t").value;
+let s1=document.getElementById("p1").innerHTML;
+let reg=new RegExp(s,"i");
+let result=s1.match(reg);
+if(result != null){
+document.getElementById("msg").innerHTML="found";
+}
+else{
+document.getElementById("msg").innerHTML=" notfound";
+
+}
+}
+</script>
+</head>
+<body>
+<input type="text" name="n" id="t" value=""style:"width: 400px; height:40px"/><br><br>
+<input type="submit" name="n" value="search data" style:"width: 400px; height:40px" onclick="search()"/>
+
+<p id="p1">
+Online Notepad india is a free browser-based text editor that india allows you to create and edit multiple india plain-text files in your browser. No registration or login required. It is great for writing quick notes and printing simple pages. What makes it special is the autosave  india functionality, which saves your draft every second. 
+</p>
+<span id="msg"></span>
+</body>
+</html>

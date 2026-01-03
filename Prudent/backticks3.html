@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>document</title>
+<script type="text/javascript">
+function sum(...x){
+let s=0;
+for(var i=0; i<x.length;i++){
+s=s+x[i];
+}
+document.write(`sum is ${s}`);
+}
+let num1=parseInt(prompt("Enter First number:"));
+let num2=parseInt(prompt("Enter second number:"));
+</script>
+</head>
+<body>
+<form onsubmit="calculationsSum(); return false;">
+  Number 1:<input type="number" id="num1" required/><br>
+  Number 2:<input type="number" id="num2" required/><br>
+<button type="submit">Calculate Sum</button>
+</form>
+</body>
+</html>

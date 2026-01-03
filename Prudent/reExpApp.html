@@ -1,0 +1,27 @@
+<html>
+<head>
+<script type="text/javascript">
+ function checkNum(str){
+let regExp=/^[0-9]+$/;
+let result=regExp.test(str);
+if(result && (str.length===10))
+{
+document.getElementById("s").innerHTML="valid";
+}
+else{
+document.getElementById("s").innerHTML="Invalid";
+
+}
+}
+</script>
+<style>
+input{
+width:400px; height:40px
+}
+</style>
+</head>
+<body>
+<input type='text' name='n' id='t' value='' style='width:400px; height:40px;' onkeyup='checkNum(this.value)'/>
+&nbsp;&nbsp;<span id='s'></span>
+</body>
+</html>

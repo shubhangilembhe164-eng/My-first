@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>Access value from textBox</title>
+<script type="text/javascript">
+accesstext=function(){
+var inputText=document.getElementById("t");
+var val=inputText.value;
+alert(val);
+}
+</script>
+</head>
+<body>
+<input type="text" name="n" id="t" value="check your value"/><br><br>
+
+<input type="submit" name="s" value="Get value from TextBox" onclick="accesstext()"/>
+</body>
+</html>

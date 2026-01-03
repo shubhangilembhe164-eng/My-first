@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>regular expression application</title>
+<script type='text/javascript'>
+ function checkNum(str){
+ (/^[a-zA-z '
+']+$/.test(str))?document.getElementById("s").innerHTML="":document.getElementById("s").in
+nerHTML="Invalid Name";
+ }
+</script>
+<style>
+ input{
+ width:400px;
+ height:40px;
+ }
+</style>
+</head>
+<body>
+ <input type='text' name='name' value='' onkeyup='checkNum(this.value)'/>
+&nbsp;&nbsp;<span id='s'></span>
+</body>
+</html>
+
+
+============================================
+checkNum(str) – A JavaScript function that takes a string str (user input) as an argument.
+/^[a-zA-Z ']+$/ – This is a Regular Expression (RegEx) that means:
+^ → Start of the string
+[a-zA-Z '] → Allow only uppercase (A-Z), lowercase (a-z), space, and apostrophe (')
++ → At least one or more valid characters
+$ → End of the string
+So the full regex means: "Only letters, space, and apostrophes are allowed."
+.test(str) → This method checks if the user input matches the above pattern.

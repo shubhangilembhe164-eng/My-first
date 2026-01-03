@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Two Numbers</title>
+
+<script>
+        function addNumbers() {
+            let a = parseFloat(document.getElementById("num1").value);
+            let b = parseFloat(document.getElementById("num2").value);
+            document.getElementById("result").value = a + b;
+        }
+    </script>
+</head>
+<body>
+
+    <h3>Addition of Two Numbers</h3>
+
+    <input type="number" id="num1" placeholder="First number"><br><br>
+    <input type="number" id="num2" placeholder="Second number"><br><br>
+    <input type="number" id="result" placeholder="Result">
+
+    <button onclick="addNumbers()">Add</button>
+
+    
+
+</body>
+</html>

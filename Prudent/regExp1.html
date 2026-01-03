@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>regular expression example</title>
+<script type='text/javascript'>
+ function search(){
+ let s=document.getElementById("t").value;
+ let para=document.getElementById("p1");
+ let s1=para.innerHTML;
+ let reg=new RegExp(s,"i");
+ let result = s1.search(reg);
+ if(result!=-1)
+ {
+ let prevString=s1.substring(0,result);
+ let nextString=s1.substring((prevString.length+s.length),s1.length);
+ let newSpan=document.createElement("span");
+ newSpan.style.color="green";
+ newSpan.style.padding="5px";
+ newSpan.innerHTML=s;
+ let newSpan1=document.createElement("span");
+ newSpan1.innerHTML=prevString;
+ let newSpan2=document.createElement("span");
+ newSpan2.innerHTML=nextString;para.innerHTML="";
+ para.appendChild(newSpan1);
+ para.appendChild(newSpan);
+ para.appendChild(newSpan2);
+ }else{
+document.getElementById("msg").innerHTML="Data Not Found";
+ } }</script>
+</head>
+<body>
+<input type='text' name='n' id='t' value='' style='width:400px; height:40px;'/><br><br>
+<input type='submit' name='s' value='Search Data' style='width:400px;height:40px;' onclick="search()" />
+<p id="p1">good morning indiagood evening india good night india I am indian and india is my country and i like india</p>
+<span id='msg'></span>
+</body>
+</html>
